@@ -1,0 +1,5 @@
+@import '../../../../../../config/styles/colors';
+
+.navbar {
+  background-color: var(--primary-color-dark);
+}

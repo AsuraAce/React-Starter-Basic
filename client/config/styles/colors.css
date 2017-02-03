@@ -1,0 +1,45 @@
+@import './material-color-palette';
+
+/* stylelint-disable */
+
+:root {
+  --primary-color:           var(--grey800);
+  --primary-color-dark:      var(--grey900);
+  --primary-color-light:     var(--grey500);
+
+  --accent-color:            var(--orangeA200);
+  --accent-color-dark:       var(--orangeA400);
+  --accent-color-light:      var(--orangeA100);
+
+  --text-primary-dark:       rgba(0, 0, 0, 0.87);
+  --text-secondary-dark:     rgba(0, 0, 0, 0.54);
+  --text-disabled-dark:      rgba(0, 0, 0, 0.38);
+  --text-divider-dark:       rgba(0, 0, 0, 0.12);
+
+  --text-primary-light:      rgba(255, 255, 255, 1);
+  --text-secondary-light:    rgba(255, 255, 255, 0.70);
+  --text-disabled-light:     rgba(255, 255, 255, 0.50);
+  --text-divider-light:      rgba(255, 255, 255, 0.12);
+
+  --icon-active-dark:        rgba(0, 0, 0, 0.54);
+  --icon-inactive-dark:      rgba(0, 0, 0, 0.38);
+
+  --icon-active-light:       rgba(255, 255, 255, 1);
+  --icon-inactive-light:     rgba(255, 255, 255, 0.50);
+
+  --background-dark:         #303030;
+  --background-light:        var(--grey50);
+
+  --black:                   #000000;
+  --white:                   #FFFFFF;
+
+  --danger:                  crimson;
+  --warning:                 tomato;
+  --success:                 mediumseagreen;
+  --info:                    mediumseagreen;
+
+  --danger-light:            lightpink;
+  --success-light:           honeydew;
+  --warning-light:           moccasin;
+  --info-light:              mediumseagreen;
+}

@@ -1,0 +1,8 @@
+@import '../../../../config/styles/colors';
+
+.footer {
+  align-items: center;
+  background-color: var(--primary-color-dark);
+  display: flex;
+  grid-area: footer;
+}

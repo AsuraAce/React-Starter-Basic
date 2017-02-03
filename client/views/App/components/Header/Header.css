@@ -1,0 +1,6 @@
+@import '../../../../config/styles/colors';
+
+.header {
+  height: 100%;
+  grid-area: header;
+}

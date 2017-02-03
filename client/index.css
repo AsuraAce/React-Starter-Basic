@@ -1,0 +1,7 @@
+/* npm */
+@import 'normalize.css';
+
+/* styles */
+@import './config/styles/material-shadows.css';
+@import './config/styles/material-color-palette.css';
+@import './config/styles/element-defaults.css';
