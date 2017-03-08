@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { BrowserRouter } from 'react-router';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
 import { AppContainer as HotReloader } from 'react-hot-loader';
 
 import './index.css';
@@ -16,14 +16,14 @@ import MatchWithTransition from './views/App/shared/MatchWithTransition/MatchWit
 const render = () => {
   ReactDOM.render(
     <HotReloader>
-      <BrowserRouter>
+      <Router>
         <App>
-          <MatchWithTransition exactly pattern="/" component={Home} />
-          <MatchWithTransition exactly pattern="/page1" component={Page1} />
-          <MatchWithTransition exactly pattern="/page2" component={Page2} />
-          <MatchWithTransition exactly pattern="/page3" component={Page3} />
+          <MatchWithTransition exact path="/" component={Home} />
+          <MatchWithTransition exact path="/page1" component={Page1} />
+          <MatchWithTransition exact path="/page2" component={Page2} />
+          <MatchWithTransition exact path="/page3" component={Page3} />
         </App>
-      </BrowserRouter>
+      </Router>
     </HotReloader>,
     document.querySelector('.root'),
   );

@@ -1,6 +1,6 @@
 import React, { PropTypes } from 'react';
 import { TransitionMotion, spring } from 'react-motion';
-import { Match } from 'react-router';
+import { Route } from 'react-router-dom';
 
 const styles = {};
 
@@ -43,11 +43,11 @@ const MatchWithTransition = (props) => {
   const willLeave = () => ({ ...transitions['show-from-right'].atLeave });
 
   return (
-    <Match {...rest} children={({ matched, ...props }) => (
+    <Route {...rest} children={({ location, match }) => (
       <TransitionMotion
         willEnter={willEnter}
         willLeave={willLeave}
-        styles={matched ? [{
+        styles={match ? [{
           key: location.pathname,
           style: { ...transitions['show-from-right'].atActive },
           data: props,
@@ -74,6 +74,5 @@ const MatchWithTransition = (props) => {
 MatchWithTransition.propTypes = {
   component: PropTypes.func.isRequired,
 };
-
 
 export default MatchWithTransition;

@@ -1,17 +1,12 @@
-import React, { PropTypes } from 'react';
+import React from 'react';
 
 import cssModules from 'react-css-modules';
 import styles from './Home.css';
 
-const Home = ({ location }) => (
-  <article styleName="home" key={location.pathname}>
+const Home = () => (
+  <article styleName="home">
     <h1>Home</h1>
   </article>
 );
-
-Home.propTypes = {
-  location: PropTypes.shape({
-    pathname: PropTypes.string }).isRequired,
-};
 
 export default cssModules(Home, styles);
